@@ -12,6 +12,7 @@ This is a backup for the flutter app Summer Escape (draft name).
 <img width="343" alt="image" src="https://user-images.githubusercontent.com/68700599/91645580-d0fcf500-ea0b-11ea-8c5b-eceedfadff1e.png">
 
 ### Final Choice
+<img width="337" alt="image" src="https://user-images.githubusercontent.com/68700599/91646147-a9109000-ea11-11ea-9fc4-7d1259791168.png">
 
 ### Possible Title
 - Summmer Resort ~A Whole New World with AR~
