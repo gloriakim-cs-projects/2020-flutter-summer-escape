@@ -6,7 +6,7 @@ This is a backup for the flutter app Summer Escape (draft name).
 (2) Hop on the airplane (using recorded voices)
 (3) Show the desintation (using AR)
 
-## Step 1. Design
+## Step 1. Design (10PM ~ 4PM)
 
 ### First Draft
 <img width="343" alt="image" src="https://user-images.githubusercontent.com/68700599/91645580-d0fcf500-ea0b-11ea-8c5b-eceedfadff1e.png">
@@ -19,8 +19,6 @@ This is a backup for the flutter app Summer Escape (draft name).
 - Summer Escape
 - Your Summer Escape
 - Your Summer Resort ~Escape and Enjoy~
-
-## Step 1. Design (Plan: now ~ 12PM)
 
 ## Step 2. Coding (Plan: 12PM ~ 9PM)
 
