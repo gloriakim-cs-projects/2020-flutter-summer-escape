@@ -6,6 +6,12 @@ This is a backup for the flutter app Summer Escape (draft name).
 (2) Hop on the airplane (using recorded voices)
 (3) Show the desintation (using AR)
 
+### Possible Title
+- Summmer Resort ~A Whole New World with AR~
+- Summer Escape
+- Your Summer Escape
+- Your Summer Resort ~Escape and Enjoy~
+
 ## Step 1. Design (Plan: now ~ 12PM)
 
 ## Step 2. Coding (Plan: 12PM ~ 9PM)
