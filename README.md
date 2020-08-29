@@ -35,17 +35,17 @@ This is a backup for the flutter app Summer Escape (draft name).
 
 ### Illustrations
 
-- Airport: <a href="https://www.vecteezy.com/free-vector/escalator">Escalator Vectors by Vecteezy</a>
+- <a href="https://www.vecteezy.com/free-vector/escalator">Escalator Vectors by Vecteezy</a>
 
-- Suitcase: <a href="https://www.vecteezy.com/free-vector/open-suitcase">Open Suitcase Vectors by Vecteezy</a>
+- <a href="https://www.vecteezy.com/free-vector/open-suitcase">Open Suitcase Vectors by Vecteezy</a>
 
-- Suitcase in Airport: https://www.vecteezy.com/vector-art/215850-luggage-vector
+- <a href="https://www.vecteezy.com/free-vector/pilot">Pilot Vectors by Vecteezy</a>
 
-- Airplane: <a href="https://www.vecteezy.com/free-vector/pilot">Pilot Vectors by Vecteezy</a>
+- <a href="https://www.vecteezy.com/free-vector/pool">Pool Vectors by Vecteezy</a>
 
-- Pool with a Woman: <a href="https://www.vecteezy.com/free-vector/pool">Pool Vectors by Vecteezy</a>
+- <a href="https://www.vecteezy.com/free-vector/illustration">Illustration Vectors by Vecteezy</a>
 
-- Pool and Sea: <a href="https://www.vecteezy.com/free-vector/illustration">Illustration Vectors by Vecteezy</a>
+- <a href="https://www.vecteezy.com/free-vector/suitcase">Suitcase Vectors by Vecteezy</a>
 
 ### Icons
 
