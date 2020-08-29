@@ -6,6 +6,13 @@ This is a backup for the flutter app Summer Escape (draft name).
 (2) Hop on the airplane (using recorded voices)
 (3) Show the desintation (using AR)
 
+## Step 1. Design
+
+### First Draft
+<img width="343" alt="image" src="https://user-images.githubusercontent.com/68700599/91645580-d0fcf500-ea0b-11ea-8c5b-eceedfadff1e.png">
+
+### Final Choice
+
 ### Possible Title
 - Summmer Resort ~A Whole New World with AR~
 - Summer Escape
