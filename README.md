@@ -20,11 +20,11 @@ This is a backup for the flutter app Summer Escape (draft name).
 - Your Summer Escape
 - Your Summer Resort ~Escape and Enjoy~
 
-## Step 2. Coding
+## Step 2. Coding (4PM ~ 7AM)
 - [ ] Need to include AR
 - [ ] Need to include sound
 
-## Step 3. Demonstration
+## Step 3. Demonstration (About 15 Minutes)
 https://youtu.be/ZyREW4YgXR0
 
 ## CREDITS
