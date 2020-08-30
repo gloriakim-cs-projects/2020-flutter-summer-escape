@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:summer_escape/screens/step.dart';
 
+import 'package:summer_escape/screens/step_two_details.dart';
+
 class Destination {
   final String title;
   final String description;
@@ -99,8 +101,8 @@ _showAlertDialog(BuildContext context, String message) {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>
-              StepPage(59640, 'STEP 2.', 'PACK\nYOUR\nSUITCASE.'),
+          builder: (context) => StepPage(
+              59640, 'STEP 2.', 'PACK\nYOUR\nSUITCASE.', StepTwoDetailsPage()),
         ),
       );
     },

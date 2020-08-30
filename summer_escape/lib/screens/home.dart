@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:summer_escape/screens/credits.dart';
 import 'package:summer_escape/screens/settings.dart';
 import 'package:summer_escape/screens/step.dart';
+import 'package:summer_escape/screens/step_one_details.dart';
 
 import 'step.dart';
 
@@ -132,8 +133,12 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => StepPage(58719, 'STEP 1.',
-                                  'CHOOSE\nYOUR\nDESTINATOIN.'),
+                              builder: (context) => StepPage(
+                                58719,
+                                'STEP 1.',
+                                'CHOOSE\nYOUR\nDESTINATOIN.',
+                                FirstPageDetails(),
+                              ),
                             ),
                           );
                         },

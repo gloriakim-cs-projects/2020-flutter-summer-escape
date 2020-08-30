@@ -6,7 +6,8 @@ class StepPage extends StatefulWidget {
   final int iconCode;
   final String title;
   final String description;
-  const StepPage(this.iconCode, this.title, this.description);
+  final Widget screenPage;
+  StepPage(this.iconCode, this.title, this.description, this.screenPage);
 
   @override
   _StepPageState createState() => _StepPageState();
@@ -51,7 +52,7 @@ class _StepPageState extends State<StepPage> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => FirstPageDetails()),
+                    MaterialPageRoute(builder: (context) => widget.screenPage),
                   );
                 },
                 shape: RoundedRectangleBorder(
