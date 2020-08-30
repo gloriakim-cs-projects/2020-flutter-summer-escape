@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:summer_escape/components/checklist.dart';
 import 'package:tflite/tflite.dart'; //tflite
 import 'package:gallery_saver/gallery_saver.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:summer_escape/global_variables.dart' as globals;
+
+import 'package:summer_escape/screens/home.dart';
 
 List<String> checklist = [
   'Towel',
@@ -106,23 +109,29 @@ class _TFLiteState extends State<TFLite> {
     int index =
         -2; //index increases twice; one `forEach` and the other `index++`; so it should starts at -2
 
+    String message = 'Is your item ' + _outputs[0]["label"] + '?';
     checklist.forEach((item) {
       index++;
       if (item == _outputs[0]["label"]) {
         //your code for when the match is found
         //move to the detailed page to show more description
-//TODO:
+//TODO: go back.
 //        globals.capturedObject = checklist[index];
 //        Navigator.of(context).pop();
-//        Navigator.push(
-//          context,
-//          MaterialPageRoute(
-//            builder: (context) => DetailScreen(
-//                recyclable: recyclable[index], previousScreen: 'CAMERA'),
-//          ),
-//        );
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CheckListPage(),
+          ),
+        );
       }
     });
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => HomePage(),
+      ),
+    );
   }
 
   loadModel() async {

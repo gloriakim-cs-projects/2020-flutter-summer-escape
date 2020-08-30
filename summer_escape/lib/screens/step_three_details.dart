@@ -22,9 +22,10 @@ class _ThirdPageDetailsState extends State<ThirdPageDetails> {
         ),
         //show icons
         child: Container(
+          color: Colors.pink,
 //          backgroundColor: Colors.white,
-            //text: Text('Hopping...'),
-            ),
+          //text: Text('Hopping...'),
+        ),
       ),
     );
   }
