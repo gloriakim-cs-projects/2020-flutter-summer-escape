@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class StepFourPage extends StatelessWidget {
+class StepFourDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(

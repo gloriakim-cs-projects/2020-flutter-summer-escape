@@ -48,7 +48,7 @@ class CreditsPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 30,
                               color: Colors.white,
-                              fontFamily: 'CarterOne',
+                              fontFamily: 'Shrikhand',
                             )),
                         MyButton.getWebpage(
                             context,
@@ -71,7 +71,7 @@ class CreditsPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 30,
                               color: Colors.white,
-                              fontFamily: 'CarterOne',
+                              fontFamily: 'Shrikhand',
                             )),
                         MyButton.getWebpage(
                             context,
@@ -98,7 +98,7 @@ class CreditsPage extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 30,
                               color: Colors.white,
-                              fontFamily: 'CarterOne',
+                              fontFamily: 'Shrikhand',
                             )),
                         MyButton.getWebpage(
                             context,

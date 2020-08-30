@@ -47,6 +47,7 @@ class _SettingsPageState extends State<SettingsPage> {
           child: ListView(
             children: values.keys.map((String key) {
               return new CheckboxListTile(
+                //TODO (Optional): Build the actual mode changes
                 title: Text(
                   key,
                   style: TextStyle(

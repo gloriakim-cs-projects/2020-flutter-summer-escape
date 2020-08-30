@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:summer_escape/screens/credits.dart';
 import 'package:summer_escape/screens/settings.dart';
 
-import 'step_one.dart';
+import 'step.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                               style: TextStyle(
                                 fontSize: 30,
                                 color: Color(0xff6BBCED),
-                                fontFamily: 'CarterOne',
+                                fontFamily: 'Shrikhand',
                               )),
                         ),
                       ),
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                               style: TextStyle(
                                 fontSize: 30,
                                 color: Color(0xff6BBCED),
-                                fontFamily: 'CarterOne',
+                                fontFamily: 'Shrikhand',
                               )),
                         ),
                       ),
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                               style: TextStyle(
                                 fontSize: 30,
                                 color: Colors.white,
-                                fontFamily: 'CarterOne',
+                                fontFamily: 'Shrikhand',
                               )),
                         ),
                       ),
@@ -148,52 +148,6 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-//              Padding(
-//                padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-//                child: MaterialButton(
-//                  color: Colors.white,
-//                  shape: RoundedRectangleBorder(
-//                      borderRadius: BorderRadius.circular(100.0)),
-//                  onPressed: () {
-//                    Navigator.push(
-//                      context,
-//                      MaterialPageRoute(builder: (context) => SettingsPage()),
-//                    );
-//                  },
-//                  child: Padding(
-//                    padding: const EdgeInsets.all(10.0),
-//                    child: const Text('SETTINGS',
-//                        style: TextStyle(
-//                          fontSize: 30,
-//                          color: Color(0xFF01579B),
-//                          fontFamily: 'CarterOne',
-//                        )),
-//                  ),
-//                ),
-//              ),
-//              Padding(
-//                padding: const EdgeInsets.fromLTRB(20, 0, 20, 40),
-//                child: MaterialButton(
-//                  color: Colors.white,
-//                  shape: RoundedRectangleBorder(
-//                      borderRadius: BorderRadius.circular(100.0)),
-//                  onPressed: () {
-//                    Navigator.push(
-//                      context,
-//                      MaterialPageRoute(builder: (context) => SettingsPage()),
-//                    );
-//                  },
-//                  child: Padding(
-//                    padding: const EdgeInsets.all(10.0),
-//                    child: const Text('SETTINGS',
-//                        style: TextStyle(
-//                          fontSize: 30,
-//                          color: Color(0xFF01579B),
-//                          fontFamily: 'CarterOne',
-//                        )),
-//                  ),
-//                ),
-//              ),
             ],
           ),
         ),
