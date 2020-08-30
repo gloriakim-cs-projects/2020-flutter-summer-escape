@@ -1,0 +1,9 @@
+0 Cellphone
+1 Hat
+2 Neck Pillow
+3 Snack
+4 Sneakers
+5 Sunscreen
+6 Toothbrush
+7 Towel
+8 T-Shirt

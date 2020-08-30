@@ -9,15 +9,14 @@ class _CheckListPageState extends State<CheckListPage> {
   //variable for checkbox
   Map<String, bool> values = {
     'Towel': false,
-    'Clothes': false,
-    'Hats': false,
-    'Shoes': false,
+    'T-Shirt': false,
+    'Hat': false,
+    'Sneakers': false,
     'Toothbrush': false,
-    'Cell Phone': false,
-    'Pillow': false,
-    'Cash': false,
-    'Passport': false,
-    'Brush': false,
+    'Cellphone': false,
+    'Sunscreen': false,
+    'Snack': false,
+    'Neck Pillow': false,
   };
   @override
   Widget build(BuildContext context) {

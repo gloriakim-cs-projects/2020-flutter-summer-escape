@@ -8,8 +8,24 @@ class ThirdPageDetails extends StatefulWidget {
 class _ThirdPageDetailsState extends State<ThirdPageDetails> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.cyanAccent,
+    return new Scaffold(
+      //show background
+      extendBodyBehindAppBar: true,
+      body: Container(
+        //show full-size background
+        decoration: BoxDecoration(
+          color: Colors.black,
+          image: DecorationImage(
+            image: AssetImage('images/step3_image.JPG'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        //show icons
+        child: Container(
+//          backgroundColor: Colors.white,
+            //text: Text('Hopping...'),
+            ),
+      ),
     );
   }
 }
