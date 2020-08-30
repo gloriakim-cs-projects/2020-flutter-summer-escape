@@ -73,12 +73,8 @@ class _FirstPageDetailsState extends State<FirstPageDetails> {
                       trailing: Icon(Icons.keyboard_arrow_right,
                           size: 60.0, color: Colors.white),
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => ExamplePage(),
-                          ),
-                        );
+                        //TODO: Alarm message with dest[index]
+                        _showAlertDialog(context);
                       },
                     ),
                   ),
@@ -90,4 +86,35 @@ class _FirstPageDetailsState extends State<FirstPageDetails> {
       ),
     );
   }
+}
+
+_showAlertDialog(BuildContext context) {
+  // set up the buttons
+  Widget cancelButton = FlatButton(
+    child: Text("Cancel"),
+    onPressed: () {},
+  );
+  Widget continueButton = FlatButton(
+    child: Text("Continue"),
+    onPressed: () {},
+  );
+
+  // set up the AlertDialog
+  AlertDialog alert = AlertDialog(
+    title: Text("AlertDialog"),
+    content:
+        Text("Would you like to continue learning how to use Flutter alerts?"),
+    actions: [
+      cancelButton,
+      continueButton,
+    ],
+  );
+
+  // show the dialog
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return alert;
+    },
+  );
 }
