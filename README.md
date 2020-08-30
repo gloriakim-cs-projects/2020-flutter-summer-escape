@@ -22,11 +22,10 @@ This is a backup for the flutter app Summer Escape (draft name).
 
 ## Step 2. Coding
 - [ ] Need to include AR
+- [ ] Need to include sound
 
 ## Step 3. Demonstration
-
-## Step 4. Presentation
-
+https://youtu.be/ZyREW4YgXR0
 
 ## CREDITS
 
