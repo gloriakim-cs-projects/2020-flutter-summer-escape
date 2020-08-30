@@ -1,6 +1,9 @@
+import 'dart:ui'; //text shadow
 import 'package:flutter/material.dart';
 import 'package:summer_escape/screens/credits.dart';
 import 'package:summer_escape/screens/settings.dart';
+
+import 'step_one.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -19,8 +22,6 @@ class _HomePageState extends State<HomePage> {
           color: Colors.black,
           image: DecorationImage(
             image: AssetImage('images/background_image.JPG'),
-            colorFilter: ColorFilter.mode(
-                Colors.black.withOpacity(0.6), BlendMode.dstATop),
             fit: BoxFit.cover,
           ),
         ),
@@ -28,15 +29,40 @@ class _HomePageState extends State<HomePage> {
         child: Expanded(
           child: SafeArea(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-//            crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Text(
-                  'Summer Escape',
-                  style: TextStyle(
-                    fontSize: 70.0,
-                    color: Colors.white,
-                    fontFamily: 'Shrikhand',
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0,40,0,0),
+                  child: Text(
+                    'SUMMER ESCAPE',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 70.0,
+                      color: Color(0xff6BBCED),
+                      fontFamily: 'Shrikhand',
+                      shadows: <Shadow>[
+                        //actual shadow
+                        Shadow(
+                          offset: Offset(5.0, 5.0),
+                          color: Color(0xFF01579B),
+                        ),
+                        //outline
+            Shadow( // bottomLeft
+                offset: Offset(-1.5, -1.5),
+                color: Colors.white
+            ),
+            Shadow( // bottomRight
+                offset: Offset(1.5, -1.5),
+                color: Colors.white
+            ),
+            Shadow( // topRight
+                offset: Offset(1.5, 1.5),
+                color: Colors.white
+            ),
+            Shadow( // topLeft
+              offset: Offset(-1.5, 1.5),
+              color: Colors.white),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -65,14 +91,15 @@ class _HomePageState extends State<HomePage> {
                             child: const Text('CREDITS',
                                 style: TextStyle(
                                   fontSize: 30,
-                                  color: Color(0xFF01579B),
+
+                                  color: Color(0xff6BBCED),
                                   fontFamily: 'CarterOne',
                                 )),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 10, 20, 50),
+                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 50),
                         child: MaterialButton(
                           color: Colors.white,
                           shape: RoundedRectangleBorder(
@@ -89,7 +116,31 @@ class _HomePageState extends State<HomePage> {
                             child: const Text('SETTINGS',
                                 style: TextStyle(
                                   fontSize: 30,
-                                  color: Color(0xFF01579B),
+                                  color: Color(0xff6BBCED),
+                                  fontFamily: 'CarterOne',
+                                )),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 0, 20, 50),
+                        child: MaterialButton(
+                          color: Color(0xff6BBCED),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(100.0)),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => StepOnePage()),
+                            );
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: const Text('START',
+                                style: TextStyle(
+                                  fontSize: 30,
+                                  color: Colors.white,
                                   fontFamily: 'CarterOne',
                                 )),
                           ),
