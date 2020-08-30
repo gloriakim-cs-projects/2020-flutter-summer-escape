@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:summer_escape/screens/step.dart';
 
-
 class Destination {
   final String title;
   final String description;
@@ -74,10 +73,7 @@ class _FirstPageDetailsState extends State<FirstPageDetails> {
                       ),
                       trailing: Icon(Icons.keyboard_arrow_right,
                           size: 60.0, color: Colors.white),
-
-
                       onTap: () {
-
                         _showAlertDialog(context, message);
                       },
                     ),
@@ -95,31 +91,41 @@ class _FirstPageDetailsState extends State<FirstPageDetails> {
 _showAlertDialog(BuildContext context, String message) {
   // set up the buttons
   Widget continueButton = FlatButton(
-    child: Text('YES!',style: TextStyle(color: Colors.black, fontSize: 20),),
+    child: Text(
+      'YES!',
+      style: TextStyle(color: Colors.black, fontSize: 20),
+    ),
     onPressed: () {
-Navigator.push(context, MaterialPageRoute(
-    builder: (context) => StepPage(559640, 'STEP 2.', 'PACK\nYOUR\nSUITCASE.'),),);
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) =>
+              StepPage(59640, 'STEP 2.', 'PACK\nYOUR\nSUITCASE.'),
+        ),
+      );
     },
   );
   Widget cancelButton = FlatButton(
     child: Text(
       'No',
-      style: TextStyle(color: Colors.black,
-        fontSize: 20),
+      style: TextStyle(color: Colors.black, fontSize: 20),
     ),
     onPressed: () {
-      Navigator.of(context).pop();},
+      Navigator.of(context).pop();
+    },
   );
-
 
   // set up the AlertDialog
   AlertDialog alert = AlertDialog(
-    title: Text(message, style: TextStyle(color: Colors.black),),
+    title: Text(
+      message,
+      style: TextStyle(color: Colors.black),
+    ),
     actions: [
       continueButton,
       cancelButton,
     ],
-      backgroundColor: Colors.white,
+    backgroundColor: Colors.white,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
   );
 
