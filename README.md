@@ -39,6 +39,10 @@ This is a backup for the flutter app Summer Escape (draft name).
 
 - Forest: <span>Photo by <a href="https://unsplash.com/@imatbagjagumilar?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Imat Bagja Gumilar</a> on <a href="https://unsplash.com/s/photos/forest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
+- North Pole: <span>Photo by <a href="https://unsplash.com/@longmaspirit?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Long Ma</a> on <a href="https://unsplash.com/s/photos/iceburg?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+- Desert: <span>Photo by <a href="https://unsplash.com/@parradesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Giorgio Parravicini</a> on <a href="https://unsplash.com/s/photos/desert?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
 ### Illustrations
 
 - <a href="https://www.vecteezy.com/free-vector/escalator">Escalator Vectors by Vecteezy</a>
