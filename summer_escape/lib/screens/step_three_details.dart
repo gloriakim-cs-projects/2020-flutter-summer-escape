@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class StepThreeDetailsPage extends StatelessWidget {
+class ThirdPageDetails extends StatefulWidget {
+  @override
+  _ThirdPageDetailsState createState() => _ThirdPageDetailsState();
+}
+
+class _ThirdPageDetailsState extends State<ThirdPageDetails> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Icon(
-          Icons.widgets,
-          color: Colors.blue,
-        ),
-      ],
+    return Container(
+      color: Colors.cyanAccent,
     );
   }
 }
