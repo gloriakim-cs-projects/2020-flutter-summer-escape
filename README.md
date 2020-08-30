@@ -20,11 +20,12 @@ This is a backup for the flutter app Summer Escape (draft name).
 - Your Summer Escape
 - Your Summer Resort ~Escape and Enjoy~
 
-## Step 2. Coding (Plan: 12PM ~ 9PM)
+## Step 2. Coding
+- [ ] Need to include AR
 
-## Step 3. Demonstration (Plan: 9PM ~ 10PM)
+## Step 3. Demonstration
 
-## Step 4. Presentation (Plan: 10PM ~)
+## Step 4. Presentation
 
 
 ## CREDITS
