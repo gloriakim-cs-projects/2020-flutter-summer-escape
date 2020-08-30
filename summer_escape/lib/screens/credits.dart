@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CreditsPage extends StatelessWidget {
   @override
@@ -51,12 +52,10 @@ class CreditsPage extends StatelessWidget {
                                 color: Colors.white,
                                 fontFamily: 'CarterOne',
                               )),
-                          const Text('explanations...',
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.white,
-                                fontFamily: 'CarterOne',
-                              )),
+                          RaisedButton(
+                            onPressed: _launchURL,
+                            child: Text('Photo by AJ Robbie on Unsplash'),
+                          ),
 
                         ],
                       ),
@@ -69,5 +68,14 @@ class CreditsPage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+_launchURL() async {
+  const url = 'https://unsplash.com/photos/BuQ1RZckYW4';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
