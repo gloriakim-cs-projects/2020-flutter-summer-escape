@@ -133,7 +133,7 @@ class _HomePageState extends State<HomePage> {
                             context,
                             MaterialPageRoute(
                               builder: (context) => StepPage(58719, 'STEP 1.',
-                                  'CHOOSE\nYOUR\nDESTINATOIN'),
+                                  'CHOOSE\nYOUR\nDESTINATOIN.'),
                             ),
                           );
                         },

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:summer_escape/screens/ExamplePage.dart';
+import 'package:summer_escape/screens/step.dart';
+
 
 class Destination {
   final String title;
@@ -39,6 +40,7 @@ class _FirstPageDetailsState extends State<FirstPageDetails> {
             itemCount: dest.length,
             itemBuilder: (context, index) {
               String imagename = dest[index].title;
+              String message = 'Are you ready to explore ' + imagename + '?';
               return Padding(
                 padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                 child: Container(
@@ -72,9 +74,11 @@ class _FirstPageDetailsState extends State<FirstPageDetails> {
                       ),
                       trailing: Icon(Icons.keyboard_arrow_right,
                           size: 60.0, color: Colors.white),
+
+
                       onTap: () {
-                        //TODO: Alarm message with dest[index]
-                        _showAlertDialog(context);
+
+                        _showAlertDialog(context, message);
                       },
                     ),
                   ),
@@ -88,26 +92,35 @@ class _FirstPageDetailsState extends State<FirstPageDetails> {
   }
 }
 
-_showAlertDialog(BuildContext context) {
+_showAlertDialog(BuildContext context, String message) {
   // set up the buttons
-  Widget cancelButton = FlatButton(
-    child: Text("Cancel"),
-    onPressed: () {},
-  );
   Widget continueButton = FlatButton(
-    child: Text("Continue"),
-    onPressed: () {},
+    child: Text('YES!',style: TextStyle(color: Colors.black, fontSize: 20),),
+    onPressed: () {
+Navigator.push(context, MaterialPageRoute(
+    builder: (context) => StepPage(559640, 'STEP 2.', 'PACK\nYOUR\nSUITCASE.'),),);
+    },
   );
+  Widget cancelButton = FlatButton(
+    child: Text(
+      'No',
+      style: TextStyle(color: Colors.black,
+        fontSize: 20),
+    ),
+    onPressed: () {
+      Navigator.of(context).pop();},
+  );
+
 
   // set up the AlertDialog
   AlertDialog alert = AlertDialog(
-    title: Text("AlertDialog"),
-    content:
-        Text("Would you like to continue learning how to use Flutter alerts?"),
+    title: Text(message, style: TextStyle(color: Colors.black),),
     actions: [
-      cancelButton,
       continueButton,
+      cancelButton,
     ],
+      backgroundColor: Colors.white,
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
   );
 
   // show the dialog
