@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:summer_escape/components/step_one_details.dart';
+import 'file:///C:/Users/glori/Downloads/git-summer-escape/summer_escape/lib/screens/step_one_details.dart';
 
 class StepPage extends StatefulWidget {
   final int iconCode;

@@ -30,17 +30,3 @@ class _MyHomePageState extends State<MyHomePage> {
     return Container();
   }
 }
-
-class CreditPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class SettingPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
