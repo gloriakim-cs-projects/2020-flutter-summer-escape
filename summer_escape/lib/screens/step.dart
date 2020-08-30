@@ -2,7 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:summer_escape/components/step_one_details.dart';
 
-class StepOnePage extends StatelessWidget {
+class StepPage extends StatefulWidget {
+  final int iconCode;
+  final String title;
+  final String description;
+  const StepPage(this.iconCode, this.title, this.description);
+
+  @override
+  _StepPageState createState() => _StepPageState();
+}
+
+class _StepPageState extends State<StepPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -13,12 +23,12 @@ class StepOnePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Icon(
-              Icons.widgets,
+              IconData(widget.iconCode, fontFamily: 'MaterialIcons'),
               color: Colors.blue,
               size: 100,
             ),
             SizedBox(height: 20),
-            Text('Step 1.',
+            Text(widget.title,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 50,
@@ -27,7 +37,7 @@ class StepOnePage extends StatelessWidget {
                   fontFamily: 'Shrikhand',
                 )),
             SizedBox(height: 20),
-            Text('CHOOSE\nYOUR\nDESTINATION',
+            Text(widget.description,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 40,

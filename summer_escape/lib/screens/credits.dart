@@ -66,6 +66,14 @@ class CreditsPage extends StatelessWidget {
                             context,
                             '- Forest Photo by Imat Bagja Gumilar on Unsplash',
                             'https://unsplash.com/photos/jFCViYFYcus'),
+                        MyButton.getWebpage(
+                            context,
+                            '- North Pole Photo by Long Ma on Unsplash',
+                            'https://unsplash.com/photos/hSdEwrqs-Yo'),
+                        MyButton.getWebpage(
+                            context,
+                            '- Desert Photo by Long Ma on Unsplash',
+                            'https://unsplash.com/photos/12IHVEFRacQ'),
                         SizedBox(height: 10),
                         const Text('Illustrations',
                             style: TextStyle(
